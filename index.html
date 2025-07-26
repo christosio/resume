@@ -190,10 +190,17 @@ In addition to my technical skills, I bring strong problem-solving abilities, at
                          <!-- Honeypot (spam trap) -->
                         <input type="text" name="website" style="display:none">
 
-                        <!-- Google reCAPTCHA -->
-                        <div class="g-recaptcha" data-sitekey="6LcTiY8rAAAAAIB6FdAvY7Ae2XbiStQTdT2e1AX1"></div>
                         <button type="submit" value="SEND" class="contact__button button">Send</button>
                     </form>
+                    <script src="https://www.google.com/recaptcha/api.js?render=6LcTiY8rAAAAAIB6FdAvY7Ae2XbiStQTdT2e1AX1"></script>
+                    <script>
+                    grecaptcha.ready(function() {
+                    grecaptcha.execute('YOUR_SITE_KEY', {action: 'contact'}).then(function(token) {
+                        document.getElementById('recaptchaToken').value = token;
+                    });
+                    });
+                    </script>
+
                 </div>
             </section>
         </main>
