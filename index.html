@@ -183,13 +183,15 @@ In addition to my technical skills, I bring strong problem-solving abilities, at
                 <h2 class="section-title">Contact</h2>
 
                 <div class="contact__container bd-grid">
-                    <form action="contact.php" class="contact__form">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                          <input type="text" name="website" style="display:none">
+                    <form action="contact.php" class="contact__form" method="post">
+                      <input type="text"  class="contact__input"   name="name" placeholder="Your Name" required >
+                      <input type="email"  class="contact__input" name="email" placeholder="Your Email" required>
+                      <textarea name="message" placeholder="Your Message" required class="contact__input"></textarea>
+                         <!-- Honeypot (spam trap) -->
+                        <input type="text" name="website" style="display:none">
+
+                        <!-- Google reCAPTCHA -->
                         <div class="g-recaptcha" data-sitekey="6LcTiY8rAAAAAIB6FdAvY7Ae2XbiStQTdT2e1AX1"></div>
-                        <div id="responseMsg" style="margin-top: 10px;"></div>
                         <input type="button" value="SEND" class="contact__button button">
                     </form>
                 </div>
