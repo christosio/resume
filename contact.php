@@ -26,4 +26,6 @@ $headers = "From: $email\r\nReply-To: $email";
 
 mail($to, $subject, $message, $headers);
 
+echo"hi";
+
 ?>
