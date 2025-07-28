@@ -34,7 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Send email
-    $to = "christosiwannides@christosio.uka"; // <-- change this
+    $to = "christosioannides@christosio.uk"; // <-- change this
     $subject = "Contact Form Message";
     $headers = "From: $email\r\nReply-To: $email\r\n";
     $body = "Name: $name\nEmail: $email\n\nMessage:\n$message";
