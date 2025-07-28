@@ -192,14 +192,10 @@ In addition to my technical skills, I bring strong problem-solving abilities, at
 
                         <button type="submit" value="SEND" class="contact__button button">Send</button>
                     </form>
-                    <script src="https://www.google.com/recaptcha/api.js?render=6LcTiY8rAAAAAIB6FdAvY7Ae2XbiStQTdT2e1AX1"></script>
-                    <script>
-                    grecaptcha.ready(function() {
-                    grecaptcha.execute('YOUR_SITE_KEY', {action: 'contact'}).then(function(token) {
-                        document.getElementById('recaptchaToken').value = token;
-                    });
-                    });
-                    </script>
+                   <script src="https://www.google.com/recaptcha/api.js?render=6LcTiY8rAAAAAIB6FdAvY7Ae2XbiStQTdT2e1AX1"></script>
+                    <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
+
+
 
                 </div>
             </section>
@@ -220,5 +216,6 @@ In addition to my technical skills, I bring strong problem-solving abilities, at
 
         <!--===== MAIN JS =====-->
         <script src="js/main.js"></script>
+        <script src="js/google.js"></script>
     </body>
 </html>
