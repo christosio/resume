@@ -5,3 +5,6 @@ grecaptcha.ready(function() {
   });
 });
 document.getElementById('g-recaptcha-response').value = token;
+    function onSubmit(token) {
+      document.getElementById("contact__form").submit();
+    }
