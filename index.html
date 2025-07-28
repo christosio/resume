@@ -192,25 +192,8 @@ In addition to my technical skills, I bring strong problem-solving abilities, at
 
                         <button type="submit" value="SEND" class="contact__button button">Send</button>
                     </form>
-<script>
-  const urlParams = new URLSearchParams(window.location.search);
-  const message = urlParams.get('message');
 
-  if (message === 'success') {
-    // Option 1: Show an alert
-    alert("Message sent successfully!");
 
-    // Option 2: Show message in the page
-    const successMsg = document.createElement("p");
-    successMsg.textContent = "Message sent successfully!";
-    successMsg.style.color = "green";
-    successMsg.style.fontWeight = "bold";
-    successMsg.style.marginTop = "20px";
-
-    // Append to the top of the body or a specific container
-    document.body.prepend(successMsg);
-  }
-</script>
 
                 </div>
             </section>

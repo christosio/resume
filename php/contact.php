@@ -42,9 +42,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (mail($to, $subject, $body, $headers)) {
     header("Location: https://christosio.uk/?message=success");
 
-        echo "Message sent successfully.";
     } else {
-        echo "Failed to send message.";
+    header("Location: https://christosio.uk/?message=fail");
     }
 } else {
     echo "Invalid request.";
