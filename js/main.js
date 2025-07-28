@@ -71,3 +71,20 @@ sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text',{});
 sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400}); 
 sr.reveal('.home__social-icon',{ interval: 200}); 
 sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200}); 
+const urlParams = new URLSearchParams(window.location.search);
+  const message = urlParams.get('message');
+
+  if (message === 'success') {
+    // Option 1: Show an alert
+    alert("Message sent successfully!");
+
+    // Option 2: Show message in the page
+    const successMsg = document.createElement("p");
+    successMsg.textContent = "Message sent successfully!";
+    successMsg.style.color = "green";
+    successMsg.style.fontWeight = "bold";
+    successMsg.style.marginTop = "20px";
+
+    // Append to the top of the body or a specific container
+    document.body.prepend(successMsg);
+  }

@@ -40,6 +40,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $body = "Name: $name\nEmail: $email\n\nMessage:\n$message";
 
     if (mail($to, $subject, $body, $headers)) {
+    header("Location: https://christosio.uk/?message=success");
+
         echo "Message sent successfully.";
     } else {
         echo "Failed to send message.";
