@@ -72,33 +72,3 @@ sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400
 sr.reveal('.home__social-icon',{ interval: 200}); 
 sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200});
 
-  const urlParams = new URLSearchParams(window.location.search);
-  const message = urlParams.get('message');
-
-  let text = "";
-  let color = "black";
-
-  if (message === 'success') {
-    text = "Message sent successfully!";
-    color = "green";
-  } else if (message === 'fail') {
-    text = "Message failed to send. Please try again.";
-    color = "red";
-  } else if (message === 'error') {
-    text = "Please fill in all required fields.";
-    color = "orange";
-  }
-
-  if (text) {
-    const msg = document.createElement("p");
-    msg.textContent = text;
-    msg.style.color = color;
-    msg.style.fontWeight = "bold";
-    msg.style.marginTop = "20px";
-    msg.style.fontFamily = "sans-serif";
-
-    document.body.prepend(msg);
-
-    // Clean URL after displaying the message
-    window.history.replaceState({}, document.title, window.location.pathname);
-  }
