@@ -1,19 +1,4 @@
-document.getElementById("contactForm").addEventListener("submit", function(e) {
-  e.preventDefault();
 
-  const form = e.target;
-  const data = new FormData(form);
-
-  fetch("contact.php", {
-    method: "POST",
-    body: data
-  })
-  .then(res => res.text())
-  .then(msg => {
-    document.getElementById("responseMsg").innerHTML = msg;
-    form.reset();
-  });
-});
 /*===== MENU SHOW =====*/ 
 const showMenu = (toggleId, navId) =>{
     const toggle = document.getElementById(toggleId),
