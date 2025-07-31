@@ -183,12 +183,29 @@ In addition to my technical skills, I bring strong problem-solving abilities, at
                 <h2 class="section-title">Contact</h2>
                 <div class="contact__container bd-grid">
                    <form id="contact-form">
-                        <input type="text" placeholder="Name" class="contact__input" required>
-                        <input type="email" placeholder="Email" class="contact__input" required>
-                        <textarea cols="0" rows="10" class="contact__input" required></textarea>
-                        <div class="g-recaptcha" data-sitekey="6LcgKJQrAAAAANgyPUeVvVtBVkTZzCLWrnSLTEql"></div>
-                        <button type="submit"  class="button  contact__button">SEND</button>
-                    </form>
+    <label>
+      Name:<br>
+      <input type="text" name="name" placeholder="Your Name" required>
+    </label>
+    <br><br>
+
+    <label>
+      Email:<br>
+      <input type="email" name="email" placeholder="your@email.com" required>
+    </label>
+    <br><br>
+
+    <label>
+      Message:<br>
+      <textarea name="message" placeholder="Your message here..." required></textarea>
+    </label>
+    <br><br>
+
+    <div class="g-recaptcha" data-sitekey="6LcgKJQrAAAAANgyPUeVvVtBVkTZzCLWrnSLTEql"></div>
+    <br>
+
+    <button type="submit">Send</button>
+  </form>
                 </div>
             </section>
         </main>
