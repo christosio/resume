@@ -209,7 +209,41 @@ In addition to my technical skills, I bring strong problem-solving abilities, at
 
         <!--===== MAIN JS =====-->
         <script src="js/main.js"></script>
-        <script src="js/contact.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+            const form = document.getElementById('contact-form');
+
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
+
+                const recaptchaResponse = grecaptcha.getResponse();
+                if (!recaptchaResponse) {
+                alert("Please complete the reCAPTCHA.");
+                return;
+                }
+
+                const name = form.name.value;
+                const email = form.email.value;
+                const message = form.message.value;
+
+                const mailtoLink = `mailto:christosioannides@christosio.uk?subject=Message from ${encodeURIComponent(name)}&body=${encodeURIComponent(message)}%0A%0AFrom: ${encodeURIComponent(email)}`;
+                window.location.href = mailtoLink;
+            });
+            });
+        </script>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const navMenu = document.getElementById("nav-menu");
+                const navToggle = document.getElementById("nav-toggle");
+
+                if (navToggle) {
+                    navToggle.addEventListener("click", () => {
+                        navMenu.classList.toggle("show");
+                    });
+                }
+            });
+</script>
 
     </body>
 </html>
