@@ -306,6 +306,54 @@ img {
   background-color: var(--first-color);
   border-radius: 0.5rem;
 }
+.skills__bar {
+  height: 5px;
+  background-color: #f0f0f0;
+  position: relative;
+  border-radius: 3px;
+  overflow: hidden;
+  margin-top: 0.5rem;
+}
+
+.skills__html::after {
+  content: '';
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  background-color: #e34c26;
+  top: 0;
+  left: 0;
+}
+
+.skills__css::after {
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background-color: #2965f1;
+  top: 0;
+  left: 0;
+}
+
+.skills__js::after {
+  content: '';
+  position: absolute;
+  width: 70%;
+  height: 100%;
+  background-color: #f0db4f;
+  top: 0;
+  left: 0;
+}
+
+.skills__ux::after {
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background-color: #ff69b4;
+  top: 0;
+  left: 0;
+}
 
 /* ===== WORK =====*/
 .work__container {
