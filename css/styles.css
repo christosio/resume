@@ -324,7 +324,7 @@ img {
 .skills__html::after {
   content: '';
   position: absolute;
-  width: 80%;
+  width: 90%;
   height: 100%;
   background-color: #e34c26;
   top: 0;
@@ -334,7 +334,7 @@ img {
 .skills__css::after {
   content: '';
   position: absolute;
-  width: 50%;
+  width: 80%;
   height: 100%;
   background-color: #2965f1;
   top: 0;
@@ -354,7 +354,7 @@ img {
 .skills__ux::after {
   content: '';
   position: absolute;
-  width: 50%;
+  width: 80%;
   height: 100%;
   background-color: #ff69b4;
   top: 0;
