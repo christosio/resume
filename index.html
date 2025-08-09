@@ -296,9 +296,6 @@
   <!--===== SCROLL REVEAL =====-->
   <script src="https://unpkg.com/scrollreveal"></script>
 
-  <!--===== MAIN JS =====-->
-  <script src="js/main.js"></script>
-
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       const form = document.getElementById("contact-form");
@@ -334,6 +331,20 @@
                 }
             });
 </script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const navMenu = document.getElementById("nav-menu");
+    const navToggle = document.getElementById("nav-toggle");
+
+    if (navToggle) {
+        navToggle.addEventListener("click", () => {
+            navMenu.classList.toggle("show");
+        });
+    }
+});
+
+  <!--===== MAIN JS =====-->
+  <script src="js/main.js"></script>
 
     </body>
 </html>
