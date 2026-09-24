@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="CI logo">
+  <rect width="256" height="256" rx="42" fill="#e3f1f0"/>
+  <path d="M158 61a88 88 0 1 0 0 134" fill="none" stroke="#125b85" stroke-width="29" stroke-linecap="round"/>
+  <circle cx="178" cy="81" r="15" fill="#101d32"/>
+  <path d="M178 111v70" fill="none" stroke="#101d32" stroke-width="25" stroke-linecap="round"/>
+</svg>
